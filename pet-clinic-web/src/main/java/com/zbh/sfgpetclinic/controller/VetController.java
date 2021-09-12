@@ -1,15 +1,15 @@
-package com.zbh.sfgpetclinic;
+package com.zbh.sfgpetclinic.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping({"", "/", "index", "index.html"})
-public class IndexController {
+@RequestMapping({"/vets", "/admin/vets", "/admin/vets.html"})
+public class VetController {
 
 	@GetMapping
-	public String index() {
-		return "index";
+	public String viewVetList() {
+		return "admin/vet";
 	}
 }
