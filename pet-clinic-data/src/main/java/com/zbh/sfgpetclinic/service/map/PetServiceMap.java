@@ -2,9 +2,12 @@ package com.zbh.sfgpetclinic.service.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import com.zbh.sfgpetclinic.model.Pet;
 import com.zbh.sfgpetclinic.service.CrudService;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
 	
 	@Override
