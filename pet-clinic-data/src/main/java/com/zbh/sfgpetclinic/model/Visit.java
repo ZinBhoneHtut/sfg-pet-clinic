@@ -2,8 +2,10 @@ package com.zbh.sfgpetclinic.model;
 
 import java.time.LocalDate;
 
-public class Visit {
+public class Visit extends BaseEntity{
 
+	private static final long serialVersionUID = 999899907186676719L;
+	
 	private LocalDate date;
 	private String description;
 	private Pet pet;
