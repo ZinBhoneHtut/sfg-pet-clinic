@@ -5,7 +5,7 @@ import java.util.Set;
 import org.springframework.stereotype.Service;
 
 import com.zbh.sfgpetclinic.model.PetType;
-import com.zbh.sfgpetclinic.service.CrudService;
+import com.zbh.sfgpetclinic.service.PetTypeService;
 
 /**
 * @author ZinBhoneHtut
@@ -13,7 +13,7 @@ import com.zbh.sfgpetclinic.service.CrudService;
 * @date Sep 29, 2021
 */
 @Service
-public class PetTypeServiceMap extends AbstractMapService<PetType, Long> implements CrudService<PetType, Long> {
+public class PetTypeServiceMap extends AbstractMapService<PetType, Long> implements PetTypeService {
 
 	@Override
 	public Set<PetType> findAll() {
