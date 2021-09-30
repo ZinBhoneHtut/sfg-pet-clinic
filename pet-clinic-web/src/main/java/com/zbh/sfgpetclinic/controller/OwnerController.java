@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.zbh.sfgpetclinic.service.OwnerService;
 
 @Controller
-@RequestMapping("/owner")
+@RequestMapping("/owners")
 public class OwnerController {
 	
 	private final OwnerService ownerService;
@@ -17,9 +17,14 @@ public class OwnerController {
 		this.ownerService = ownerService;
 	}
 
-	@GetMapping({"", "/", "/owner.html"})
+	@GetMapping({"", "/", "/owners.html"})
 	public String viewOwnerList(Model model) {
 		model.addAttribute("owners", ownerService.findAll());
-		return "admin/owner";
+		return "admin/owners";
+	}
+	
+	@GetMapping("/find")
+	public String findOwners() {
+		return "notimplemented";
 	}
 }
