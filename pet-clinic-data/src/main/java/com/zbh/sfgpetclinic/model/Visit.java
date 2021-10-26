@@ -9,7 +9,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "visit")
+@Table(name = "visits")
 public class Visit extends BaseEntity{
 
 	private static final long serialVersionUID = 999899907186676719L;
